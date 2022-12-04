@@ -1,0 +1,375 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Sweet Mart</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ionicons/2.0.1/css/ionicons.min.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <style>
+      *{
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+      }
+      html{
+        scroll-behavior: smooth;
+      }
+      .nav-link{
+        color: black;
+      }
+      .nav-link:hover{
+        color: crimson;
+        transition: 0.3s;
+      }
+      .nav-item{
+        color: black;
+        font-weight: 600;
+        padding-left: 40px;
+      }
+      .btn0{
+        height: 53px;
+        width: 130px;
+        outline: none;
+        border: none;
+        color: white;
+        cursor: pointer;
+        transition: all 0.4s;
+        background-color: rgb(255, 51, 129);
+      }
+      .btn0:hover{
+        background: rgb(0,0,0);
+        transition: all 0.4s;
+      }
+      .btn1{
+        height: 53px;
+        width: 130px;
+        background-color: transparent;
+        outline: none;
+        border: 2px solid rgb(255, 51, 129);
+        color: rgb(255, 51, 129);
+        transition: all 0.4s;
+        
+      }
+      .btn1:hover{
+        background-color: rgb(0,0,0);
+        transition: all 0.4s;
+        color: white;
+        border: none;
+        outline: none;
+      }
+      /*================================ main section =========================*/
+
+      .main{
+        background: url(https://media.istockphoto.com/id/1211873554/photo/cupcake-border.jpg?b=1&s=170667a&w=0&k=20&c=iB6kA98AZCpE4gWoqVYuXbOxrv51286pd3vE7kcghQM=);
+        background-size: cover;
+        min-height: 95vh;
+        width: 100%;
+      }
+      .main h1{
+        font-size: 4rem;
+        font-weight: 800;
+        position: relative;
+        bottom: 20px;
+        top:300px;
+        right: 0;
+        color: palevioletred;
+
+      }
+      .btn2{
+        height: 70px;
+        width: 25%;
+        position:relative;
+        top:150px;
+        background-color: rgb(51, 149, 255);
+        color: white;
+        border: none;
+        outline: none;
+        cursor: pointer;
+        transition: all 0.4s;
+      }
+      .btn2:hover{
+        background-color: rgb(0, 0, 0);
+        transition: all 0.4s;
+      }
+
+      /*------------------- about us -----------------*/
+
+      #about{
+          display: flex;
+          flex-direction: column;
+          box-sizing: border-box;
+          padding: 20px;
+          margin-bottom: 50px;
+      }
+      .container-fluid h1{
+        font-weight: 600;
+        font-size: 3rem;
+        color: black;
+      }
+      #pic{
+          display: flex;
+      }
+      #pic img{
+          width: 575px;
+          height: 400px;
+      }
+      #abt{
+          display: flex;
+          flex-direction: column;
+          text-align: justify;
+          padding: 10px;
+      }
+      #abt h2{
+          font-size: 2rem;
+          margin-bottom: 20px;
+          text-align: center;
+      }
+      #abt p{
+        font-size: 1.5rem;
+        font-family: geneva;
+        color : black;
+        
+      }
+
+      /*------------------ references -----------*/
+      #refer{
+          display: flex;
+          flex-direction: column;
+          background-color:white;
+          color:black;
+          align-items: center;
+          padding: 20px;
+
+      }
+      .gallery{
+          display: flex;
+          flex-wrap: wrap;
+          justify-content: space-around;
+          box-sizing: border-box;
+      }
+      .gallery img{
+          width: 300px;
+          height: 150px;
+          margin: 10px;
+          border: solid wheat;
+      }
+      .headings{
+        font-size: 3rem;
+        font-weight: 500;
+      }
+
+      /*----------------------customer speaks ----------------------*/
+      #cust{
+          display: flex;
+          flex-direction: column;
+          background-color:white;
+          color:black;
+          align-items: center;
+          padding: 20px;
+
+      }
+      .headings{
+        font-size: 3rem;
+        font-weight: 500;
+      }
+
+      /*---------------------- contact us -------------------------*/
+      #contact{
+          display: flex;
+          flex-direction: column;
+          box-sizing: border-box;
+          background-color: rgb(160,160,160);
+          color: white;
+          padding: 20px;
+      }
+      .form{
+          display: flex;
+          flex-direction: column;
+          box-sizing: border-box;
+          align-items: center;
+          margin: 20px 0px;
+
+      }
+      .input{
+          padding: 12px;
+          margin: 15px;
+          width: 30%;
+          border: none;
+          outline: none;
+      }
+      #msg{
+          width: 20%;
+          padding: 10px;
+          margin: 15px;
+          border: none;
+          outline: none;
+
+      }
+      #send{
+          padding: 10px;
+          width: 10%;
+          margin: 40px;
+          border: none;
+          outline: none;
+
+      }
+      #send:hover{
+          cursor: pointer;
+          box-shadow: 0 0 10px white;
+      }
+      /*---------------- footer--------------------*/
+      .footer-basic {
+        padding:40px 0;
+        background-color:#ffffff;
+        color:#4b4c4d;
+      }
+      .footer-basic ul {
+        padding:0;
+        list-style:none;
+        text-align:center;
+        font-size:18px;
+        line-height:1.6;
+        margin-bottom:0;
+      }
+      .footer-basic li {
+        padding:0 10px;
+      }
+      .footer-basic ul a {
+        color:inherit;
+        text-decoration:none;
+        opacity:0.8;
+      }
+      .footer-basic ul a:hover {
+        opacity:1;
+      }
+      .footer-basic .social {
+        text-align:center;
+        padding-bottom:25px;
+      }
+      .footer-basic .social > a {
+        font-size:24px;
+        width:40px;
+        height:40px;
+        line-height:40px;
+        display:inline-block;
+        text-align:center;
+        border-radius:50%;
+        border:1px solid #ccc;
+        margin:0 8px;
+        color:inherit;
+        opacity:0.75;
+      }
+      .footer-basic .social > a:hover {
+        opacity:0.9;
+      }
+      .footer-basic .copyright {
+        margin-top:15px;
+        text-align:center;
+        font-size:13px;
+        color:#aaa;
+        margin-bottom:0;
+      }
+    </style>
+  </head>
+
+
+  <body>
+    <a href="/">
+    <nav class="navbar navbar-expand-lg">
+  <div class="container">
+    <a class="navbar-brand" href="#"><img src="https://lh3.googleusercontent.com/fnVk7xwMGfrye-eeZmGCDNDuf25uM4FKmCLhRGORBvM3xjOn1FgjHZ0xqp2XdyMDYcIoBpHAXUcKm7VORvdDJL4UHuBG1zM3u4Xoq_362lcGFit6LGfJ9MNw969x2w7_J54HgLH_kWSYyhjdk1abTdJqYLkxiDBjIJZoiaZmoIEE_gHe9b81nL6uySR51SqxnCwVD2m1jJDVPiKHCeSg4byJ14mJUSP6MhgnnPWdZgE1HgXTq8jcNuWzzN_eQHiwaXqU2Pjm6Ipk_5M1_awInrgvtb1Md8aIBsmD-lftev11I-zCgeFF8vAUAbOVpYq7JmDRROQYc1UmDGLM-Zq8uD8WSfCFq87khYJZI02_bzwmhszLzQTSD01a1LcwJqF_ud2sCeDw4St14-P-kF8CdZw_sVb3EfjDHeWhyEwHbMMkI7AWKesLetaeOAgZ4_mxLQuolTByBjIMXn3tQ4UICiaKhlDrTb--NjypdvTP393Htvs1RVKDusD5U6_b4oNHwxbp98huRQhvzdke9xh2yZMo_ZbnNcaHqD3ZJW1xligPRjW41jrXH8rEgQKV6g3DOJqMWXsDw6eWF0T4tptjmvR4grKYYSstxDw_kQNh7DvJGdCN0ho0yGY_V_8BVg373lUkPC24LYnblhMW2wshl_H4WIqRScEy5EPaL6_ZaUxdkykmPEepb6lAGtltqzKHOTs73SZ6ex-P6tQBUM_5fVu4kcA-z3IV1uP6dsOz6MadijRl8r_mDfIFMbXLqO202o40yslG28j2vMZEimpFZgXfvVljb-zQtaTpR-WOO8mK4DsVAUsEF1281QUmRBqUmYc5J9z7eUdhOyU_nnBayBTS0mCLUf9yUO02yaLxgyiMz1dUWs4krMTowp9zAjCwTa_SM9yox2MbtPxl7u91S1uiOutTkKuHFxLwhBvqUmwjaWw=w205-h204-no?authuser=0" width="120" height="120" alt="logo"></a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav m-auto mb-2 mb-lg-0">&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;
+        <li class="nav-item">
+          <a class="nav-link"href="#">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#about py-5">About</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#refer">Menu</a>
+        </li>
+       
+        <li class="nav-item">
+          <a class="nav-link" href="#contact">ContactUs</a>
+        </li>&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;
+        
+      </ul>
+    </div>
+  </div>
+</nav>
+  <!--------------------- main section------------>
+  <section class="main py-5">
+    <div class="container py-4">
+      <div class="row">
+        <div class="col-lg-7">
+          <h1> Love at first bite. <br></h1><br>
+
+          
+        </div>
+      </div>  
+    </div>
+  </section>
+  <!-------------------------about us---------------->
+  <section id="about py-5">
+    <div class="container-fluid py-5">
+      <h1>About Us</h1><br>
+      <div id="pic">
+            <img src="https://i0.wp.com/cookingfromheart.com/wp-content/uploads/2020/12/Egg-Puff-2.jpg?resize=720%2C960&ssl=1">
+            <div id="abt">
+                <p>Bakery industry is one of the emerging industries in the market with lots of future scope. Bakers generally operate the business offline in most part of the world, but with passing time and rise of technological era, this industry is going online slowly.The society is heading towards the modernization and social changes these days.People often use to celebrate small occasions and cake is one of the basic needs of the celebration. Ordering cake offline is frustrating task, as one need to order it first with their specification and for bakers it takes time to meet the demand. In this process, the customer needs to visit the bakers twice to receive the cake. But what if the customers can order it from their smartphones and bakers get the required cake description online? It will save time and effort of both customers and bakers. Our Sweet Mart is a collection of various famous cakes and bakes across different websites.
+                </p>
+        
+            </div>
+      </div>
+    </div>
+  </section>
+  <!--------------------------- Menu ------------------------------------>
+  <section id="refer">
+        <h1 class="headings">Menu</h1><br>
+        <div class="gallery">
+            <a href="https://www.amazon.in/Bigwishbox-Chocolate-Truffle-Birthday-Anniversary/dp/B07ZM7J2J2/ref=sr_1_8?crid=1PTTIV6KPORUN&keywords=cakes&qid=1669560806&qu=eyJxc2MiOiI3LjcwIiwicXNhIjoiNy4xOCIsInFzcCI6IjYuNzUifQ%3D%3D&sprefix=cakes%2Caps%2C2429&sr=8-8"><img src="https://m.media-amazon.com/images/I/41L12hLwO2L._AC_UL320_.jpg" alt="organic tattva logo"></a>
+            <a href="https://www.amazon.in/Rich-Plum-Cake-Eggless-250g/dp/B0BLKLSSZF/ref=sr_1_29?crid=V8HWPQPDDEED&keywords=cakes&qid=1669561133&qu=eyJxc2MiOiI3LjcwIiwicXNhIjoiNy4xOCIsInFzcCI6IjYuNzUifQ%3D%3D&sprefix=%2Caps%2C13082&sr=8-29"><img src="https://m.media-amazon.com/images/I/71kSbr6KmaL._AC_UL320_.jpg" alt="conscious food logo"></a>
+            <a href="https://www.amazon.in/sspa/click?ie=UTF8&spc=MToyOTE1MzIwNjUyNTcyMDExOjE2Njk1NjExMzM6c3BfbXRmOjIwMDIwMDg5MDc0MDk4OjowOjo&url=%2FGhasitaram-Gifts-Anniversary-Valentine-Christmas%2Fdp%2FB09NC5GQM2%2Fref%3Dsr_1_23_sspa%3Fcrid%3DV8HWPQPDDEED%26keywords%3Dcakes%26qid%3D1669561133%26qu%3DeyJxc2MiOiI3LjcwIiwicXNhIjoiNy4xOCIsInFzcCI6IjYuNzUifQ%253D%253D%26sprefix%3D%252Caps%252C13082%26sr%3D8-23-spons%26sp_csd%3Dd2lkZ2V0TmFtZT1zcF9tdGY%26psc%3D1"><img src="https://m.media-amazon.com/images/I/41pKUDOTgDL._AC_UL320_.jpg" alt="isayorganic logo"></a>
+            <a href="https://www.google.com/aclk?sa=l&ai=DChcSEwjO1a_t0M77AhWwg0sFHUdZDIIYABALGgJzZg&sig=AOD64_0-ZLMP7V7_ej1H2XMiyhaLWorgAw&ctype=5&q=&ved=2ahUKEwi9yKnt0M77AhXgUGwGHVEaBKUQ9aACKAB6BAgGEBQ&adurl="><img src="https://encrypted-tbn2.gstatic.com/shopping?q=tbn:ANd9GcSQk67WKkh1bS6gTQafI9zyF0e9YrWgEpefBNj21T1xzc_8h_CQP_8&usqp=CAc" alt="amazon logo"></a>
+            <a href="https://www.google.com/url?url=https://udaipur.dshans.com/product/karachi-pista-bakery-biscuits-400gm/&rct=j&q=&esrc=s&sa=U&ved=0ahUKEwi7tpC20c77AhWdUGwGHT6MAdQQ1SkI8wsoAA&usg=AOvVaw2f7nNcE9yBNxsdHEuB2i4N"><img src="https://encrypted-tbn1.gstatic.com/shopping?q=tbn:ANd9GcSssVdNiq7OLsZ9BYALTCyIIjcJsNW4yS1tp-1_PBxmd2Ue72nZ5efLzRPRh6fqXf15hKbt0y6RfhBdFLQJ2WgCIi6NXAey_oJMCkosu71JYofp9IhCnaTO3w&usqp=CAE" alt="ayudaorganics logo"></a>
+            <a href="https://www.google.com/aclk?sa=l&ai=DChcSEwiKnJW20c77AhUZkmYCHSADDD4YABBBGgJzbQ&sig=AOD64_0IymkTFmzqG8ZJwaAUbo1rvNzoYQ&ctype=5&q=&ved=0ahUKEwi7tpC20c77AhWdUGwGHT6MAdQQww8IlQk&adurl="><img src="https://encrypted-tbn1.gstatic.com/shopping?q=tbn:ANd9GcTTm3Qm0zQY058kzr3sWXVWWo2smU5wj76-8D9Pfg61UxZzErXjmUmiMeyGp7hVbcjL_HBC_-bgi1wgn-XCGPPmzNGz2QgHkxOIyH9b6j97&usqp=CAE" alt="orgpick logo"></a>
+            <a href="https://www.google.com/url?url=https://www.crownbakery.in/shop/egpfs01-1nos-egg-puffs-19%3Fsrsltid%3DAYJSbAfGv-m3GLLQZ9lY8xIkmMODyCl5h4ePHtwhX6NSUiKXcTEh9dEq2z8&rct=j&q=&esrc=s&sa=U&ved=0ahUKEwiW-Z7s0s77AhXfT2wGHcksBBkQ1SkIsQgoAA&usg=AOvVaw0HM-gVym5N1fgGeYWHdT8O"><img src="https://encrypted-tbn2.gstatic.com/shopping?q=tbn:ANd9GcRIXtTf_rdrkgYRD_2-Bu-ndCyJmd-XxXwCfSUGmIl0NTS8-iykifYIMN6Hk8MkLoUFCLsGVcJZegHn-6ejGoP9FuSEbM3-7mMebxkVoE_17b4CZkbnxA9uog&usqp=CAE" alt="satvyk logo"></a>
+            <a href="https://www.google.com/url?url=https://www.hotbreads.co.in/products/copy-of-spicy-stuffed-buns-3-pcs%3Fvariant%3D41543899742368%26currency%3DINR%26utm_medium%3Dproduct_sync%26utm_source%3Dgoogle%26utm_content%3Dsag_organic%26utm_campaign%3Dsag_organic&rct=j&q=&esrc=s&sa=U&ved=0ahUKEwillK671M77AhXjSGwGHUfNDzUQ1SkIwQgoAA&usg=AOvVaw2d2PY91WrAHqC-MFxIYQWY"><img src="https://encrypted-tbn0.gstatic.com/shopping?q=tbn:ANd9GcRnayhHZVuPxjZIPagnVOXA5DUv_d3DpRqiCquA99M9ozJDiGclPO2XV7jvqq1pfx_AM_FktKLZO3byoOAWRQ8IHKHrFW1Aj4G93F7JX4A&usqp=CAE alt=""></a>
+            <a href="https://www.google.com/url?url=https://dunkelbraun.com/spinach-palak-puff-200gm-box/&rct=j&q=&esrc=s&sa=U&ved=0ahUKEwillK671M77AhXjSGwGHUfNDzUQ1SkIgA0oAA&usg=AOvVaw2SvRwhQckmCKDMcjSgJq4L"><img src="https://encrypted-tbn1.gstatic.com/shopping?q=tbn:ANd9GcTTC2rypdoOPOrHRXQrrkGGy2dKE8KASe0dnpcoy0KU9SYKEGeAz1v5wNfPrc39KOjPcNr9lBijG8plfHrlhcuwwFAVyaqRI5rLP2vPw_8lJqfuhurPr9nM0A&usqp=CAE" alt="nimbark logo"></a>
+            <a href="https://www.google.com/aclk?sa=l&ai=DChcSEwjml93O1c77AhWPmGYCHYkxDH0YABAKGgJzbQ&sig=AOD64_19FGro6Yp3wrp1gCnWPC0-eZlimw&ctype=5&q=&ved=2ahUKEwj89tXO1c77AhXLTmwGHU-zDxoQ9aACKAB6BAgFEE4&adurl="><img src="https://encrypted-tbn0.gstatic.com/shopping?q=tbn:ANd9GcTXoVqCuvI1LiYwEtlg44FyvbmbZgkve8jpDrS-vPbDKLMI7Qyo7aXn6BxlUakbyIvOzl1hJXARC2crmEkdCIkcUzZWaHMafxO_gzjG_iat&usqp=CAc" alt="theorganicworld logo"></a>
+            <a href="https://www.google.com/aclk?sa=l&ai=DChcSEwiovOuF1s77AhWTfysKHZxfDdAYABANGgJzZg&sig=AOD64_0UV4jP05NE57b7iTr04xCd-5huPA&ctype=5&q=&ved=2ahUKEwiw5uWF1s77AhVtRmwGHc_RBVoQ9aACKAB6BAgDEAw&adurl="><img src="https://encrypted-tbn0.gstatic.com/shopping?q=tbn:ANd9GcSc_2OeM8_3RuFDhPCap8b8yYsxHZ_sHhyLxk9rA4xrx-dHJTyVElUypXLEkMi6Ma68p1zmuYPNkjvxHi2NwLHgGOFsKe1aKjLwvqUa5xk&usqp=CAc" alt="naturelandorganics logo"></a>
+            <a href="https://www.google.com/aclk?sa=l&ai=DChcSEwjCoNCo1s77AhUMnUsFHZClALYYABANGgJzZg&sig=AOD64_3MS0V7aj-Fdk-v-bV_9en-TVF7DA&ctype=5&q=&ved=2ahUKEwiZocqo1s77AhXMaGwGHesyBdQQ9aACKAB6BAgDEDM&adurl="><img src="https://encrypted-tbn3.gstatic.com/shopping?q=tbn:ANd9GcRCkBwO2ypU8ud12AI8utqKBo3DvV5wy0p6UQPG4pRBNZkbLbjpjYK1jUi-tcfqyA&usqp=CAc" alt="healthybuddha logo"></a>
+        </div>
+  </section>
+<!--------------------------------- Contact Us --------------------------------->
+<section id="contact">
+  <h1 class="headings" style="color: black;">Contact Us</h1>
+  <form action="" class="form">
+      <input type="text" name="name" class="input" placeholder="Name">
+      <input type="email" name="email" class="input" placeholder="Email Address*">
+      <textarea name="msg" id="msg" cols="30" rows="10" placeholder="Comment"></textarea>
+      <input type="submit" value="SEND" id="send">
+  </form>
+</section>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+<!--------------------------------------------footer------------------------------------------------------------->
+    <style>
+       
+        h2 {text-align: center;}
+      </style>
+       <h2>Thank You for Visiting!!!</h2>
+    </footer>
+</div>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/js/bootstrap.bundle.min.js"></script>
+</footer>
+    </a>
+  </body>
+</html>
